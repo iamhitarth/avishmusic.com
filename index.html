@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'avi-pink': '#b978ca',
+            'avi-off-white': '#aab4b6',
+            'avi-btn-primary': '#191620',
+          },
+          backgroundImage: {
+            'hero-image': "url('hero.png')"
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/43473ffa60.js" crossorigin="anonymous"></script>
+  <title>Avish Music</title>
+  <link rel="stylesheet" href="fonts/ecrises/Ecrises.css">
+  <style type="text/tailwindcss">
+    html {
+      font-family: Ecrises, Georgia;
+      @apply text-avi-off-white text-xl;
+    }
+  </style>
+</head>
+<body class="bg-black">
+  <section class="flex pt-5 px-20">
+    <section class="w-2/5 flex-col ">
+      <header>
+        <h1 class="text-7xl font-bold text-avi-pink uppercase">Avish</h1>
+      </header>
+      <hr class="border-0 text-white my-3 block">
+      <article>
+        <!-- Jaana info -->
+        <h2 class="text-4xl font-bold text-avi-pink uppercase">'Jaana'</h2>
+        <p>out on 1 March 2022</p>
+        <img src="images/jaana.png" class="object-contain w-3/6 my-2" alt="Jaana album art" />
+        <button class="bg-avi-btn-primary font-bold py-2 px-4">Pre save now on Spotify</button>
+      </article>
+      <hr class="border-0 text-white my-3 block">
+      <section>
+        <!-- Email list sign up -->
+        <p>Sign up to the mailing list to get an audio preview</p>
+        <input type="text" name="email" id="email" class="w-3/6 p-1 my-2 block" placeholder="email address" />
+        <button class="bg-avi-btn-primary font-bold py-2 px-4">Submit</button>
+      </section>
+      <hr class="border-0 text-white my-5">
+      <footer class="flex mb-2">
+        <!-- Footer with social media and contact links -->
+        <a href="#" title="Instagram"><i class="fa-brands fa-instagram fa-xl pr-2 text-white align-middle"></i></a>
+        <a href="#" title="Spotify"><i class="fa-brands fa-spotify fa-xl px-2 text-white align-middle"></i></a>
+        <a href="#" title="YouTube"><i class="fa-brands fa-youtube fa-xl px-2 text-white align-middle"></i></a>
+        <a href="#" title="SoundCloud"><i class="fa-brands fa-soundcloud fa-xl px-2 text-white align-middle"></i></a>
+        <a href="#" title="Email me"><p class="text-2xl px-2">Contact</p></a>
+      </footer>
+    </section>
+    <aside class="w-fit">
+      <!-- Hero image with Avi's face -->
+      <img src="images/hero.png" class="object-cover w-full" alt="Avish Sharma" />
+    </aside>
+  </section>
+</body>
+</html>
